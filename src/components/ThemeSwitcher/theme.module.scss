@@ -7,10 +7,21 @@
     body[data-theme="dark"]{
         --switcher-color:var(--white-100);
         --switcher-color-hover:var(--gray-300);
-
     }
-    
 }
+:global{
+    body[data-theme="light"]{
+       
+        --body-color:var(--white);
+        // --body-color-hover:var(--gray-300);
+      
+    }
+    body[data-theme="dark"]{
+        --body-color:var(--gray-100);
+        // --body-color-hover:var(--gray-300);
+    }
+  }
+
 .switcher {
     display: flex;
     align-items: center;
@@ -25,10 +36,14 @@
     &:hover{
         color:var(--switcher-color-hover);
     }
-    svg{
-        fill:var(--switcher-color-hover);
-    }
-    .icon{
-      fill:var(--switcher-color);
-    }
+   
+}
+
+.icon{
+  fill:var(--switcher-color);
+
+}
+svg:hover{
+    fill:var(--switcher-color-hover);
+  
 }

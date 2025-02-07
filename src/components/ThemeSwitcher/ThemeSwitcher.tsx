@@ -11,17 +11,17 @@ const ThemeSwitcher = () => {
   const ThemeIcon = () => {
     return isDark ? SunIcon : MoonIcon;
   };
-  // const ThemeIcon = isDark ? SunIcon : MoonIcon;
+
 
   useEffect(() => {
     document.body.setAttribute("data-theme", isDark ? "dark" : "light");
   }, [isDark]);
 
   return (
-    <div className={styles.themeSwitcherProps} onClick={() => setDark(!isDark)}>
+    <div className={styles.switcher} onClick={() => setDark(!isDark)}>
       <span>{themeText}</span>
-
       {ThemeIcon()}
+
     </div>
   );
 };

@@ -1,6 +1,3 @@
-
-
-
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import styles from './TheHeaderProps.module.scss'
 
