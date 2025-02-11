@@ -1,7 +1,7 @@
-import { LocalGithubUser } from "./components/type";
+import { LocalGithubUser } from "../components/type" 
 
 export const userMock: LocalGithubUser = {
-    "login": "michey85",
+    "login": "brit",
 
     company: "EPAM",
 
