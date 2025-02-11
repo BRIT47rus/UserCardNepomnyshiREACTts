@@ -1,6 +1,6 @@
 export type LocalGithubUser = {
     login: string;
-    id: number;
+
     avatar: string;
     name: string;
     company: string;
@@ -12,7 +12,9 @@ export type LocalGithubUser = {
     followers: number;
     following: number;
     created: string;
+
 }
+// https://api.github.com/users/michey85
 export type GithubUser = {
     login: string;
     id: number;
